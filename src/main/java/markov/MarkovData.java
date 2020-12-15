@@ -6,6 +6,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+/**
+ *
+ * MarkovData helps to learn and analyze the text given.
+ *
+ */
 public class MarkovData {
 	private Map<String, String> markovTable = new HashMap<String,String>();
 	private List<String> textwords = new ArrayList<String>();

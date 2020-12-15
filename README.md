@@ -29,26 +29,29 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | D | no need to test main | 
+| readFileAsString | D | testing a Files.readString is useless | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | D | no need to test constructor |
+| generateMarkov  | T |  |
+| learn  | T |  |
+| setRgen  | D | no need to test a random generator |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | T |  |
+| learnWord  | D | no need to test a setter |
+| renforceWord  | T |  |
+| getLearnedWord  | D | no need to test a getter  |
+| containsKeyWord | D | no need to test a getter  |
+| getKeyWord | D | no need to test a getter | 
+| keyWordSize | D | no need to test a getter  |
 
 ## Functions to test now
 
