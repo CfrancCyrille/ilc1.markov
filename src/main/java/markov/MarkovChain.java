@@ -5,6 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+/**
+ *
+ * MarkovChain generates the new chains.
+ *
+ */
 public class MarkovChain {
 	
 	/** Markov chain ngram parameter (contiguous sequence of words) */
