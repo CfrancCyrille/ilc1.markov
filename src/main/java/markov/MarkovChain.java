@@ -19,6 +19,10 @@ public class MarkovChain {
 		this.data = new MarkovData();
 	}
 
+	/**
+	 * Fonction d'apprentissage à partir des occurrences dans le texte donné en paramètre,
+	 * @param text Le texte sur lequel on travail
+	 */
 	public void learn(String text) {
 		data.read(text);
 		
@@ -47,6 +51,11 @@ public class MarkovChain {
         }
 	}
 
+	/**
+	 * Génère le texte à partir du traitement effectué avec learn
+	 * @param numWords le nombre de mot souhaité dans le texte final 
+	 * @return le texte final
+	 */
     public String generateMarkov(int numWords) {
         // Build a random string using the above Markov chain table
         String buffer = "";
