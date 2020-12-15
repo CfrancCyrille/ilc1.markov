@@ -22,6 +22,12 @@ public class MarkovApp {
         System.out.println(markov.generateMarkov(12));
 	}
 
+	/**
+	 * Permet la lecture d'un fichier texte contenant le texte sur lequel on travaille
+	 * @param fileName nom du fichier
+	 * @return une String contenant le texte
+	 * @throws Exception si la lecture ne se passe pas bien
+	 */
     public static String readFileAsString(String fileName) throws Exception { 
         String data = ""; 
         Path path = Paths.get(fileName); 

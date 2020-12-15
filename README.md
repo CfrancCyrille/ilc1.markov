@@ -29,25 +29,25 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | I |  | 
+| readFileAsString | I |  | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | D|  |
+| generateMarkov  | T |  |
+| learn  |T  |  |
+| setRgen  | A |  |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
+| read  | A |  |
+| learnWord  | T  |  |
+| renforceWord T |  |  |
 | Etc.  |  |  |
 
 ## Functions to test now
