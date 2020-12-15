@@ -19,6 +19,10 @@ public class MarkovChain {
 		this.data = new MarkovData();
 	}
 
+    /**
+     * learn the sentence given bellow
+     * @param text string value that should by learn by the program
+     */
 	public void learn(String text) {
 		data.read(text);
 		
@@ -47,6 +51,11 @@ public class MarkovChain {
         }
 	}
 
+    /**
+     *This function return a string that should be understandable after the call of learn
+     * @param numWords the number of the return sentence
+     * @return return a string that should be understandable
+     */
     public String generateMarkov(int numWords) {
         // Build a random string using the above Markov chain table
         String buffer = "";

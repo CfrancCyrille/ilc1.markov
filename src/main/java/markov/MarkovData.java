@@ -10,11 +10,21 @@ public class MarkovData {
 	private Map<String, String> markovTable = new HashMap<String,String>();
 	private List<String> textwords = new ArrayList<String>();
 
+	/**
+	 * Split the text given in a list
+	 * @param text text that will be split
+	 */
 	public void read(String text) {
 		List<String> newWords = Arrays.asList(text.split(" "));
 		this.textwords.addAll(newWords);
 	}
-	
+
+	/**
+	 * Renforce a word by a keyString, if the key does not exist it will learn the word
+	 * @param keyString keyString that correspond to the word
+	 * @param wordToLearn Word that should be learn
+	 * @return return the new Key generate by ContainsKeyWord
+	 */
 	public boolean renforceWord(String keyString, String wordToLearn) {
 		String value;
 		boolean isNewKey = containsKeyWord(keyString);
