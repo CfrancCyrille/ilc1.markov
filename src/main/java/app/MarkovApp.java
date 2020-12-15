@@ -7,8 +7,16 @@ import java.nio.file.Paths;
 
 import markov.MarkovChain;
 
+/**
+ * Main class
+ * @author Sevrin
+ */
 public class MarkovApp {
-	
+	/**
+         * Main of the project
+         * @param args
+         * @throws Exception 
+         */
 	public static void main(String[] args) throws Exception {
         String sentences = readFileAsString("./target/VictorHugo_LesMiserables-II-Cosette.txt");
         System.out.println(sentences);
@@ -21,7 +29,12 @@ public class MarkovApp {
         System.out.println(markov.generateMarkov(9));
         System.out.println(markov.generateMarkov(12));
 	}
-
+    /**
+     * Read File Contente
+     * @param fileName File Path
+     * @return File Contente
+     * @throws Exception 
+     */
     public static String readFileAsString(String fileName) throws Exception { 
         String data = ""; 
         Path path = Paths.get(fileName); 

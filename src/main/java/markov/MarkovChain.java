@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-
+/**
+ * Classe MarkovChain
+ * @author Sevrin
+ */
 public class MarkovChain {
 	
 	/** Markov chain ngram parameter (contiguous sequence of words) */
@@ -13,12 +16,18 @@ public class MarkovChain {
 	private Random rgen = new Random();
 	/** Seed generator for randow  */
     private MarkovData data = null;
-
+        /**
+         * Constructor
+         * @param ngram 
+         */
 	public MarkovChain (int ngram){
 		this.ngram = ngram;
 		this.data = new MarkovData();
 	}
-
+        /**
+         * Learn function
+         * @param text 
+         */
 	public void learn(String text) {
 		data.read(text);
 		
@@ -46,7 +55,11 @@ public class MarkovChain {
 			}
         }
 	}
-
+    /**
+     * Generate a sentence
+     * @param numWords size of words to be generated
+     * @return Generated sentence
+     */
     public String generateMarkov(int numWords) {
         // Build a random string using the above Markov chain table
         String buffer = "";
@@ -96,7 +109,10 @@ public class MarkovChain {
 
          return buffer.trim();
     }
-
+        /**
+         * Set the seed generator for random
+         * @param rgen new seed
+         */
 	public void setRgen(Random rgen) {
 		this.rgen = rgen;
 	}    
