@@ -16,7 +16,14 @@
 13. that ends
 
 ## Analyze IADT functions
-Hereafter, for each classes give function to be tested. Remember that all functions does not have to be tested, some code can be checked by a simple inspection or an analyse, another code can be validated by definition (rules, etc) the others function can be tecsted by unit tests, integration tests or validation tests (IADT: Inspect, Analyse, Define, Test). 
+Hereafter, for each classes give function to be tested. Remember that all functions does not have to be tested, some code can be checked by a simple inspection or an analyse, another code can be validated by definition (rules, etc) the others function can be tecsted by unit tests, integration tests or validation tests (IADT: Inspect, Analyse, Define, Test).
+
+| Validation Mode |   Why ? When ?  |
+| :-------------: | :-------------: |
+| I: Inspect | No test needed, just a simple static test (visual) on a subset of classes (commentaries, indentation, etc.) |
+| A: Analyze | Not easy to test but the algorithm is well know and can be check by a static analyze |
+| D: Def/Dem | You can Demonstrate the function or by Definition the function needs not test (generate code, call functions, etc.)|
+| T: Test | the function can be easly test |
 
 ### Class app.MarkovApp
 
