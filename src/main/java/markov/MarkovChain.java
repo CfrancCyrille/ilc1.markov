@@ -13,12 +13,12 @@ public class MarkovChain {
 	private Random rgen = new Random();
 	/** Seed generator for randow  */
     private MarkovData data = null;
-
+    /** Generate MarkovData */
 	public MarkovChain (int ngram){
 		this.ngram = ngram;
 		this.data = new MarkovData();
 	}
-
+	/** Define rules for generation of Markov chain */
 	public void learn(String text) {
 		data.read(text);
 		
@@ -46,7 +46,7 @@ public class MarkovChain {
 			}
         }
 	}
-
+	/** Generate Markov chain from Markov data */
     public String generateMarkov(int numWords) {
         // Build a random string using the above Markov chain table
         String buffer = "";
