@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 /**
- * 
+ * Classe Data
  * @author Sevrin
  */
 public class MarkovData {
