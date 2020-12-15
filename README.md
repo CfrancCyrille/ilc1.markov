@@ -22,26 +22,26 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | Inspect | on regarde si le main est logique | 
+| readFileAsString | test | il faut tester si il peut lire des fichiers | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | inspect | regarder si le constructeur est normal |
+| generateMarkov  | Analyse test | on doit analyser et tester la génération de markov |
+| learn  | Analyse test | on doit vérifier si l'apprentissage pourrais logiquement fonctionner et le tester |
+| setRgen  | Inspect | on regarde si le set est logique |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | test | tester si on peut lire un texte |
+| learnWord  | test | tester si on pour aprendre des mots |
+| renforceWord  | Test | tester si on peut renforcer des mots  |
+| Etc.  | analyse test | regarder et tester si besoin les différentes fonction |
 
 ## Functions to test now
 
