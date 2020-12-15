@@ -29,26 +29,26 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | T |  | 
+| readFileAsString | T |   | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | I | Nous voyons qu'on créer définies des variables |
+| generateMarkov  | T |  |
+| learn  | T |  |
+| setRgen  | A | Définition de variable |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | T |  |
+| learnWord  | I | On ajoute dans une variable dans un tableau |
+| renforceWord  | T |  |
+| Etc.  | I | On retourne juste des variables |
 
 ## Functions to test now
 
