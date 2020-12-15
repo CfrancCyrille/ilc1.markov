@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-
+/**
+ * Classe qui permet de déclarer les méthodes que l'on va utiliser dans la chaîne de Markov.
+ * 
+ * @author Mikrail
+ *
+ */
 public class MarkovChain {
 	
 	/** Markov chain ngram parameter (contiguous sequence of words) */
@@ -14,11 +19,19 @@ public class MarkovChain {
 	/** Seed generator for randow  */
     private MarkovData data = null;
 
+    /**
+     * Méthode qui permet de récuperer des données
+     * @param ngram
+     */
 	public MarkovChain (int ngram){
 		this.ngram = ngram;
 		this.data = new MarkovData();
 	}
 
+	/**
+	 * Méthode qui permet de s'entrainer sur un texte
+	 * @param text
+	 */
 	public void learn(String text) {
 		data.read(text);
 		
@@ -47,6 +60,11 @@ public class MarkovChain {
         }
 	}
 
+	/**
+	 * Méthode qui permet de générer un certain nombre de mot à partir de l'entrainement
+	 * @param numWords
+	 * @return
+	 */
     public String generateMarkov(int numWords) {
         // Build a random string using the above Markov chain table
         String buffer = "";
@@ -97,6 +115,10 @@ public class MarkovChain {
          return buffer.trim();
     }
 
+    /**
+     * Méthode permettant de génerer aléatoirement
+     * @param rgen
+     */
 	public void setRgen(Random rgen) {
 		this.rgen = rgen;
 	}    
