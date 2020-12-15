@@ -12,5 +12,10 @@ public class MarkovChainTest {
 	public void test() {
 		fail("Not yet implemented");
 	}
+	
+	@Test
+	public void readTest() {
+		
+	}
 
 }
