@@ -21,7 +21,7 @@ public class MarkovApp {
         System.out.println(markov.generateMarkov(9));
         System.out.println(markov.generateMarkov(12));
 	}
-
+//probleme regle, je n'ai pas pu avancer pour l'instant mais je dois tester le pull request
     public static String readFileAsString(String fileName) throws Exception { 
         String data = ""; 
         Path path = Paths.get(fileName); 
