@@ -22,25 +22,25 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main | integration tests |  | 
-| readFileAsString | define |  | 
+| main | I |  | 
+| readFileAsString | I |  | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  | inspect |  |
-| generateMarkov  | Test |  |
-| learn  |Test  |  |
-| setRgen  | define |  |
+| MarkovChain  | D|  |
+| generateMarkov  | T |  |
+| learn  |T  |  |
+| setRgen  | A |  |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  | Test |  |
-| learnWord  | define  |  |
-| renforceWord Test |  |  |
+| read  | A |  |
+| learnWord  | T  |  |
+| renforceWord T |  |  |
 | Etc.  |  |  |
 
 ## Functions to test now
