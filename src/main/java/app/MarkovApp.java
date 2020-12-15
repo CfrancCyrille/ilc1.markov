@@ -7,6 +7,13 @@ import java.nio.file.Paths;
 
 import markov.MarkovChain;
 
+/**
+ * Cette classe va exécuter l'algorithme de Markov sur le string sentences.
+ * Elle va executer l'algorithme 3 fois avec des paramètres différents
+ * 
+ */
+
+
 public class MarkovApp {
 	
 	public static void main(String[] args) throws Exception {
@@ -21,7 +28,7 @@ public class MarkovApp {
         System.out.println(markov.generateMarkov(9));
         System.out.println(markov.generateMarkov(12));
 	}
-
+	/** Read and transform source text as String */
     public static String readFileAsString(String fileName) throws Exception { 
         String data = ""; 
         Path path = Paths.get(fileName); 
