@@ -22,26 +22,26 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | Inspection | Code deja teste pour les autres fonctions | 
+| readFileAsString | Inspection | Utilisation de bibliotheque deja teste | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | Demonstration | Constructeur |
+| generateMarkov  | T | Resultat aléatoire on va tester le type de sortie |
+| learn  | T | On regardera Data |
+| setRgen  | A | Setter avec nombre aléatoire |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | A | Setter avance, il utilise des focntion connue |
+| learnWord  | I | Utilisation de focntion deja tester |
+| renforceWord  | T | on teste |
+| Etc.  | I | Setter ou focntion deja tester |
 
 ## Functions to test now
 
