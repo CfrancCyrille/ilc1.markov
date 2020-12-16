@@ -22,26 +22,29 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main | Inspection | Code deja teste pour les autres fonctions | 
-| readFileAsString | Inspection | Utilisation de bibliotheque deja teste | 
+| main | D | Pas besoin de tester la fonction main | 
+| readFileAsString | D | Utilisation de bibliotheque deja teste | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  | Demonstration | Constructeur |
-| generateMarkov  | T | Resultat aléatoire on va tester le type de sortie |
+| MarkovChain  | D | Pas besoin de teser ce constructeur |
+| generateMarkov  | T |  |
 | learn  | T | On regardera Data |
-| setRgen  | A | Setter avec nombre aléatoire |
+| setRgen  | D | Utilisation de fonction de generation aleatoir d'une autre bibliotheque deja teste |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  | A | Setter avance, il utilise des focntion connue |
-| learnWord  | I | Utilisation de focntion deja tester |
-| renforceWord  | T | on teste |
-| Etc.  | I | Setter ou focntion deja tester |
+| read  | T |  |
+| learnWord  | D | Utilisation de fonction deja tester |
+| renforceWord  | T |  |
+| getLearnedWord  | D | pas besoin de tester un accesseur |
+| containsKeyWord  | D | pas besoin de tester un accesseur |
+| getKeyWord  | D | pas besoin de tester un accesseur |
+| keyWordSize  | D | pas besoin de tester un accesseur |
 
 ## Functions to test now
 
