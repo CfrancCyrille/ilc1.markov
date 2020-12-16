@@ -6,7 +6,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import markov.MarkovChain;
-
+/**
+ * Classe pour contenir le code à executer
+ */
 public class MarkovApp {
 	
 	public static void main(String[] args) throws Exception {
@@ -21,7 +23,12 @@ public class MarkovApp {
         System.out.println(markov.generateMarkov(9));
         System.out.println(markov.generateMarkov(12));
 	}
-
+/**
+ * permet de lire un fichier comme string
+ * @param fileName le nom du fichier
+ * @return un string de la taille du fichier
+ * @throws Exception Si le fichier n'est pas trouvé
+ */
     public static String readFileAsString(String fileName) throws Exception { 
         String data = ""; 
         Path path = Paths.get(fileName); 
